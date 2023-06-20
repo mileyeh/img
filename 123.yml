@@ -76,7 +76,7 @@ proxy-groups:
       - ""
       - " 2"
       - " 3"
-      - 183.56.223.220 twip61
+      - 139.226.136.165 twip61
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -85,7 +85,7 @@ proxy-groups:
       - ""
       - " 2"
       - " 3"
-      - 183.56.223.220 twip61
+      - 139.226.136.165 twip61
   - name: 🎥 NETFLIX
     type: select
     proxies:
@@ -95,7 +95,7 @@ proxy-groups:
       - ""
       - " 2"
       - " 3"
-      - 183.56.223.220 twip61
+      - 139.226.136.165 twip61
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -117,12 +117,12 @@ proxy-groups:
       - ""
       - " 2"
       - " 3"
-      - 183.56.223.220 twip61
+      - 139.226.136.165 twip61
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 183.56.223.220 twip61
+      - 139.226.136.165 twip61
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
@@ -132,7 +132,7 @@ proxy-groups:
       - ""
       - " 2"
       - " 3"
-      - 183.56.223.220 twip61
+      - 139.226.136.165 twip61
   - name: 📲 电报信息
     type: select
     proxies:
@@ -141,7 +141,7 @@ proxy-groups:
       - ""
       - " 2"
       - " 3"
-      - 183.56.223.220 twip61
+      - 139.226.136.165 twip61
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -151,7 +151,7 @@ proxy-groups:
       - ""
       - " 2"
       - " 3"
-      - 183.56.223.220 twip61
+      - 139.226.136.165 twip61
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -170,7 +170,7 @@ proxy-groups:
       - ""
       - " 2"
       - " 3"
-      - 183.56.223.220 twip61
+      - 139.226.136.165 twip61
   - name: ⚖️ 负载均衡-散列
     type: load-balance
     url: http://www.google.com/generate_204
@@ -180,7 +180,7 @@ proxy-groups:
       - ""
       - " 2"
       - " 3"
-      - 183.56.223.220 twip61
+      - 139.226.136.165 twip61
   - name: ⚖️ 负载均衡-轮询
     type: load-balance
     url: http://www.google.com/generate_204
@@ -190,7 +190,7 @@ proxy-groups:
       - ""
       - " 2"
       - " 3"
-      - 183.56.223.220 twip61
+      - 139.226.136.165 twip61
 rules:
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
