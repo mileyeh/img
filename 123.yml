@@ -50,9 +50,9 @@ proxies:
       headers:
         Host: twip61.imusicat.com
     udp: true
-  - name: 183.56.223.220 twip61
-    server: 183.56.223.220
-    port: 25894
+  - name: 139.226.136.165 twip61
+    server: 139.226.136.165
+    port: 26219
     type: vmess
     uuid: e7344687-c2c6-42f6-83df-59af9fc41272
     alterId: 0
