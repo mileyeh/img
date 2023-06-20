@@ -5,31 +5,39 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 183.56.223.220 twip61, server: 183.56.223.220, port: 25894, type: vmess, uuid: e7344687-c2c6-42f6-83df-59af9fc41272, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: twip61.imusicat.com}}, udp: true}
   - {name: "", server: tkus3.imusicat.com, port: 2053, type: vmess, uuid: 6688f464-f6c7-413e-e99e-4b948881267d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tkus3.imusicat.com}}, udp: true}
+  - {name: " 2", server: tkus1.imusicat.com, port: 2053, type: vmess, uuid: 26dae73f-06e2-4fa0-cb3c-e1637968014d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tkus1.imusicat.com}}, udp: true}
+  - {name: " 3", server: twip61.imusicat.com, port: 2053, type: vmess, uuid: e7344687-c2c6-42f6-83df-59af9fc41272, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: twip61.imusicat.com}}, udp: true}
+  - {name: 183.56.223.220 twip61, server: 183.56.223.220, port: 25894, type: vmess, uuid: e7344687-c2c6-42f6-83df-59af9fc41272, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: twip61.imusicat.com}}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 183.56.223.220 twip61
       - ""
+      - " 2"
+      - " 3"
+      - 183.56.223.220 twip61
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 183.56.223.220 twip61
       - ""
+      - " 2"
+      - " 3"
+      - 183.56.223.220 twip61
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 183.56.223.220 twip61
       - ""
+      - " 2"
+      - " 3"
+      - 183.56.223.220 twip61
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -48,8 +56,10 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 183.56.223.220 twip61
       - ""
+      - " 2"
+      - " 3"
+      - 183.56.223.220 twip61
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -61,23 +71,29 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 183.56.223.220 twip61
       - ""
+      - " 2"
+      - " 3"
+      - 183.56.223.220 twip61
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 183.56.223.220 twip61
       - ""
+      - " 2"
+      - " 3"
+      - 183.56.223.220 twip61
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 183.56.223.220 twip61
       - ""
+      - " 2"
+      - " 3"
+      - 183.56.223.220 twip61
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -93,8 +109,10 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 183.56.223.220 twip61
       - ""
+      - " 2"
+      - " 3"
+      - 183.56.223.220 twip61
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
